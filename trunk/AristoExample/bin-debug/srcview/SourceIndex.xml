@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+	<title>Source of AristoExample</title>
+	<nodes>
+		<node label="src" icon="classpathIcon" expanded="true">
+			<node selected="true" label="AristoExample.mxml" icon="mxmlAppIcon" url="source/AristoExample.mxml.html"/>
+		</node>
+	</nodes>
+</index>

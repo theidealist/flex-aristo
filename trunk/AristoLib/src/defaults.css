@@ -1,0 +1,230 @@
+/*
+The MIT License
+
+Copyright (c) 2010 Patrick McMichael
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+/*
+Flex styles based loosely on macmann's aristo css3 controls.
+http://github.com/maccman/aristo
+
+NOTE: Strange asset nomenclature is due to long-standing flex bug
+http://bugs.adobe.com/jira/browse/SDK-14908
+which requires all assets in SWCs to be in root SWC folder.
+
+Register, log in and vote to get this fixed!
+[This may be fixed in newer versions of Flex/Flash Builder]
+*/
+
+/* Embed Droid Fonts - departure from formal Aristo style which uses patented/licensed/non-free Arial font */
+
+@font-face {
+    src: url("assets_fonts_droid_DroidSerif-Regular.ttf");
+    font-family: "Droid Serif";
+    advancedAntiAliasing: true;
+}
+
+@font-face {
+    src: url("assets_fonts_droid_DroidSerif-Bold.ttf");
+    font-family: "Droid Serif";
+    font-weight: bold;
+    advancedAntiAliasing: true;
+}
+
+@font-face {
+    src: url("assets_fonts_droid_DroidSerif-Italic.ttf");
+    font-family: "Droid Serif";
+    font-style: italic;
+    advancedAntiAliasing: true;
+}
+
+@font-face {
+    src: url("assets_fonts_droid_DroidSerif-BoldItalic.ttf");
+    font-family: "Droid Serif";
+    font-weight: bold;
+    font-style: italic;
+    advancedAntiAliasing: true;
+}
+
+global
+{
+    font-family: "Droid Serif";
+    font-size: 12px;
+    color: #000000;
+}
+
+/* 
+    This does not make any real difference for some reason.  
+    It appears the root Application style must be pulled directly
+    from the project's Application MXML file.
+*/
+Application
+{
+    background-color:#FFFFFF;
+    background-gradient-alphas: 0, 0;
+    background-gradient-colors: #FFFFFF, #FFFFFF
+}
+
+Label
+{
+    font-family: "Droid Serif";
+    font-size: 14px;
+    font-weight: bold;
+}
+
+CheckBox
+{
+    font-family: "Droid Serif";
+    font-size: 12px;
+    upIcon: Embed(source="assets_images_check-box-bezel.png");
+    overIcon: Embed(source="assets_images_check-box-bezel.png");
+    downIcon: Embed(source="assets_images_check-box-bezel.png");
+    disabledIcon: Embed(source="assets_images_check-box-bezel-disabled.png");
+    selectedUpIcon: Embed(source="assets_images_check-box-bezel-selected.png");
+    selectedOverIcon: Embed(source="assets_images_check-box-bezel-selected.png");
+    selectedDownIcon: Embed(source="assets_images_check-box-bezel-selected.png");
+    selectedDisabledIcon: Embed(source="assets_images_check-box-bezel-selected-disabled.png");
+    
+}
+
+RadioButton
+{
+    font-family: "Droid Serif";
+    font-size: 12px;
+    upIcon: Embed(source="assets_images_radio-bezel.png");
+    overIcon: Embed(source="assets_images_radio-bezel.png");
+    downIcon: Embed(source="assets_images_radio-bezel.png");
+    disabledIcon: Embed(source="assets_images_radio-bezel-disabled.png");
+    selectedUpIcon: Embed(source="assets_images_radio-bezel-selected.png");
+    selectedOverIcon: Embed(source="assets_images_radio-bezel-selected.png");
+    selectedDownIcon: Embed(source="assets_images_radio-bezel-selected.png");
+    selectedDisabledIcon: Embed(source="assets_images_radio-bezel-selected-disabled.png");
+}
+
+Button
+{
+    font-family: "Droid Serif";
+    color: #525252;
+    font-size: 12px;
+    font-weight: bold;
+    upSkin: Embed(source="assets_images_button-bezel.png",scaleGridTop="2", scaleGridBottom="22",scaleGridLeft="2", scaleGridRight="60");
+    overSkin: Embed(source="assets_images_button-bezel.png",scaleGridTop="2", scaleGridBottom="22",scaleGridLeft="2", scaleGridRight="60");
+    downSkin: Embed(source="assets_images_button-bezel-highlighted.png",scaleGridTop="2", scaleGridBottom="22",scaleGridLeft="2", scaleGridRight="60");
+    disabledSkin: Embed(source="assets_images_button-bezel-disabled.png",scaleGridTop="2", scaleGridBottom="22",scaleGridLeft="2", scaleGridRight="60");
+}
+
+Button.blue
+{
+    font-family: "Droid Serif";
+    color: #1C4257;
+    font-size: 12px;
+    font-weight: bold;
+    upSkin: Embed(source="assets_images_default-button-bezel.png",scaleGridTop="2", scaleGridBottom="22",scaleGridLeft="2", scaleGridRight="60");
+    overSkin: Embed(source="assets_images_default-button-bezel.png",scaleGridTop="2", scaleGridBottom="22",scaleGridLeft="2", scaleGridRight="60");
+    downSkin: Embed(source="assets_images_default-button-bezel-highlighted.png",scaleGridTop="2", scaleGridBottom="22",scaleGridLeft="2", scaleGridRight="60");
+    disabledSkin: Embed(source="assets_images_default-button-bezel-highlighted-disabled.png",scaleGridTop="2", scaleGridBottom="22",scaleGridLeft="2", scaleGridRight="60");
+}
+
+/* Requires aristo.controls.SliderThumb class to be used as the thumbclass in order to get properly sized thumb */
+HSlider
+{
+    thumb-skin: Embed(source="assets_images_slider-knob.png");
+    thumbDownSkin: Embed(source="assets_images_slider-knob-highlighted.png");
+    thumbOverSkin: Embed(source="assets_images_slider-knob-highlighted.png");
+    thumbUpSkin: Embed(source="assets_images_slider-knob.png");
+    track-skin: Embed(source="assets_images_slider-horizontal-track.png",scaleGridTop="2",scaleGridBottom="4",scaleGridLeft="7",scaleGridRight="56");
+    dataTipPlacement: right;
+}
+
+/* Requires aristo.controls.SliderThumb class to be used as the thumbclass in order to get properly sized thumb */
+VSlider
+{
+    thumb-skin: Embed(source="assets_images_slider-knob.png");
+    thumbDownSkin: Embed(source="assets_images_slider-knob-highlighted.png");
+    thumbOverSkin: Embed(source="assets_images_slider-knob-highlighted.png");
+    thumbUpSkin: Embed(source="assets_images_slider-knob.png");
+    track-skin: Embed(source="assets_images_slider-horizontal-track.png",scaleGridTop="2",scaleGridBottom="4",scaleGridLeft="7",scaleGridRight="56");
+    dataTipPlacement: right;
+}
+
+ComboBox {
+    upSkin: Embed(skinClass="aristo.skins.ComboBoxSkin");
+    overSkin: Embed(skinClass="aristo.skins.ComboBoxSkin");
+    downSkin: Embed(skinClass="aristo.skins.ComboBoxSkin");
+    font-family: "Droid Serif";
+    fontSize: 12px;
+    rollOverColor:#83B0CA;
+    selectionColor:#83B0CA;
+    textSelectedColor: #F5F5F5;
+    textRollOverColor: #F5F5F5;
+    fillAlphas: 0.0, 0;
+    fillColors: #C4C4C4,#C4C4C4;
+}
+
+ScrollBar {
+    upArrowSkin: Embed(source="assets_images_scroller-up-arrow.png");
+    downArrowSkin: Embed(source="assets_images_scroller-down-arrow.png");
+    trackSkin: Embed(source="assets_images_scroller-vertical-composite-spaced.png",
+        scaleGridLeft="7", scaleGridTop="29", 
+        scaleGridRight="10", scaleGridBottom="30");
+    thumbUpSkin: Embed(source="assets_images_scroller-vertical-knob.png",
+        scaleGridLeft="7", scaleGridTop="7", 
+        scaleGridRight="8", scaleGridBottom="12");
+    thumbOverSkin: Embed(source="assets_images_scroller-vertical-knob.png",
+        scaleGridLeft="7", scaleGridTop="7", 
+        scaleGridRight="8", scaleGridBottom="12");
+    thumbDownSkin: Embed(source="assets_images_scroller-vertical-knob.png",
+        scaleGridLeft="7", scaleGridTop="7", 
+        scaleGridRight="8", scaleGridBottom="12");
+}
+
+ScrollBar.noButtons {
+    upArrowSkin: ClassReference(null);
+    downArrowSkin: ClassReference(null);
+    trackSkin: Embed(source="assets_images_scroller-vertical-composite.png",
+        scaleGridLeft="7", scaleGridTop="11", 
+        scaleGridRight="10", scaleGridBottom="12");
+    thumbUpSkin: Embed(source="assets_images_scroller-vertical-knob-spaced.png",
+        scaleGridLeft="7", scaleGridTop="11", 
+        scaleGridRight="8", scaleGridBottom="12");
+    thumbOverSkin: Embed(source="assets_images_scroller-vertical-knob-spaced.png",
+        scaleGridLeft="7", scaleGridTop="11", 
+        scaleGridRight="8", scaleGridBottom="12");
+    thumbDownSkin: Embed(source="assets_images_scroller-vertical-knob-spaced.png",
+        scaleGridLeft="7", scaleGridTop="11", 
+        scaleGridRight="8", scaleGridBottom="12");
+}
+
+TextInput {
+	fontWeight: normal;
+	borderStyle: none;
+	paddingTop: 2;
+	paddingLeft: 2;
+    themeColor: #F1CA80;
+    placeholderColor: #8E9298;
+}
+
+TextInput.search {
+    fontWeight: normal;
+    borderStyle: solid;
+    paddingTop: 2;
+    paddingLeft: 2;
+}
