@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="aristo.controls.Button"/>
+<classEntry path="aristo.skins.ComboBoxSkin"/>
+<classEntry path="aristo.controls.SliderThumb"/>
+<classEntry path="aristo.controls.TextInput"/>
+</includeClasses>
+<includeResources>
+<resourceEntry destPath="assets_images_slider-knob-highlighted.png" sourcePath="assets_images_slider-knob-highlighted.png"/>
+<resourceEntry destPath="assets_images_check-box-bezel.png" sourcePath="assets_images_check-box-bezel.png"/>
+<resourceEntry destPath="assets_images_radio-bezel-selected-disabled.png" sourcePath="assets_images_radio-bezel-selected-disabled.png"/>
+<resourceEntry destPath="assets_images_radio-bezel-selected.png" sourcePath="assets_images_radio-bezel-selected.png"/>
+<resourceEntry destPath="assets_images_button-bezel-disabled.png" sourcePath="assets_images_button-bezel-disabled.png"/>
+<resourceEntry destPath="assets_images_check-box-bezel-selected-disabled.png" sourcePath="assets_images_check-box-bezel-selected-disabled.png"/>
+<resourceEntry destPath="assets_images_default-button-bezel-highlighted.png" sourcePath="assets_images_default-button-bezel-highlighted.png"/>
+<resourceEntry destPath="assets_images_slider-horizontal-track.png" sourcePath="assets_images_slider-horizontal-track.png"/>
+<resourceEntry destPath="assets_images_scroller-vertical-knob-spaced.png" sourcePath="assets_images_scroller-vertical-knob-spaced.png"/>
+<resourceEntry destPath="assets_fonts_droid_DroidSerif-Regular.ttf" sourcePath="assets_fonts_droid_DroidSerif-Regular.ttf"/>
+<resourceEntry destPath="assets_images_scroller-vertical-composite-spaced.png" sourcePath="assets_images_scroller-vertical-composite-spaced.png"/>
+<resourceEntry destPath="assets_images_check-box-bezel-disabled.png" sourcePath="assets_images_check-box-bezel-disabled.png"/>
+<resourceEntry destPath="assets_images_slider-knob.png" sourcePath="assets_images_slider-knob.png"/>
+<resourceEntry destPath="assets_images_scroller-up-arrow.png" sourcePath="assets_images_scroller-up-arrow.png"/>
+<resourceEntry destPath="assets_fonts_droid_DroidSerif-BoldItalic.ttf" sourcePath="assets_fonts_droid_DroidSerif-BoldItalic.ttf"/>
+<resourceEntry destPath="assets_images_button-bezel-highlighted.png" sourcePath="assets_images_button-bezel-highlighted.png"/>
+<resourceEntry destPath="assets_images_scroller-vertical-knob.png" sourcePath="assets_images_scroller-vertical-knob.png"/>
+<resourceEntry destPath="assets_images_default-button-bezel.png" sourcePath="assets_images_default-button-bezel.png"/>
+<resourceEntry destPath="assets_images_scroller-down-arrow.png" sourcePath="assets_images_scroller-down-arrow.png"/>
+<resourceEntry destPath="assets_images_button-bezel.png" sourcePath="assets_images_button-bezel.png"/>
+<resourceEntry destPath="assets_fonts_droid_DroidSerif-Bold.ttf" sourcePath="assets_fonts_droid_DroidSerif-Bold.ttf"/>
+<resourceEntry destPath="assets_images_scroller-vertical-composite.png" sourcePath="assets_images_scroller-vertical-composite.png"/>
+<resourceEntry destPath="assets_images_check-box-bezel-selected.png" sourcePath="assets_images_check-box-bezel-selected.png"/>
+<resourceEntry destPath="assets_images_default-button-bezel-highlighted-disabled.png" sourcePath="assets_images_default-button-bezel-highlighted-disabled.png"/>
+<resourceEntry destPath="defaults.css" sourcePath="defaults.css"/>
+<resourceEntry destPath="assets_images_radio-bezel.png" sourcePath="assets_images_radio-bezel.png"/>
+<resourceEntry destPath="assets_images_radio-bezel-disabled.png" sourcePath="assets_images_radio-bezel-disabled.png"/>
+<resourceEntry destPath="assets_fonts_droid_DroidSerif-Italic.ttf" sourcePath="assets_fonts_droid_DroidSerif-Italic.ttf"/>
+</includeResources>
+<namespaceManifests/>
+</flexLibProperties>
